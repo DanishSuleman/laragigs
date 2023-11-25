@@ -13,7 +13,7 @@
                 theme: {
                     extend: {
                         colors: {
-                            laravel: "#ef3b2d",
+                                laravel: "#ef3b2d",
                         },
                     },
                 },
@@ -45,7 +45,7 @@
     <footer
     class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center"
 >
-    <p class="ml-2">Copyright &copy; 2023, All Rights reserved</p>
+    <p class="ml-2">Copyright &copy; 2023 Lara Gigs. All Rights Reserved.</p>
 
     <a
         href="create.html"
