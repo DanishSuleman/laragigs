@@ -15,10 +15,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Show all listings
 Route::get('/', [ListingController::class, 'index']);
 
+// Show create form
 Route::get('listings/create', [ListingController::class, 'create']);
 
+// Show edit form
+Route::get('listings/edit/{listing}', [ListingController::class, 'edit']);
+
+// Update listing
+Route::put('listings/{listing}', [ListingController::class, 'update']);
+
+// Store listing
 Route::post('/listings/store', [ListingController::class, 'store']);
 
+// Delete listing
+Route::delete('/listings/delete/{listing}', [ListingController::class, 'destroy']);
+
+// Show single listings
 Route::get('listings/{listing}', [ListingController::class, 'show']);
